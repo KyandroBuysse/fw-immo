@@ -1,0 +1,46 @@
+<!-- ======= Search ======= -->
+<section>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-2">
+        <div class="form-group mt-3">
+          <label class="form-label" for="gemeente">Gemeentes</label>
+          <select class="form-control" id="gemeente" name="city" multiple>
+            <option :value="undefined">Maak een keuze...</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-2">
+        <div class="form-group mt-3">
+          <label class="form-label" for="type">Type</label>
+          <select class="form-control" id="type" name="type">
+            <option :value="undefined">Maak een keuze...</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-2 d-flex">
+        <div class="c-input form-group mt-3 me-1">
+          <label class="form-label" for="prijsmin">Prijs min.</label>
+          <input class="form-control" type="number" step="50000" id="prijsmin" name="pricemin" />
+        </div>
+        <div class="c-input form-group mt-3 ms-1">
+          <label class="form-label" for="prijsmax">max.</label>
+          <input class="form-control" type="number" step="50000" id="prijsmax" name="pricemax" />
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-2">
+        <div class="form-group mt-3">
+          <label class="form-label" for="opp">Slaapkamers min.</label>
+          <select class="form-control" id="opp" name="bedrooms">
+            <option :value="undefined">Maak een keuze...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Search -->
